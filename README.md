@@ -19,7 +19,7 @@ import Review from 'ti.reviewdialog';
 if (!Review.isSupported()) { return; }
 
 Review.requestReview({
-  storeURL: `https://play.google.com/store/apps/details?id=${Ti.App.id}`
+  storeURL: 'https://play.google.com/store/apps/details?id=${Ti.App.id}',
   onFeedback: event => {
     // Send feedback to your server via "event.value"
   }
